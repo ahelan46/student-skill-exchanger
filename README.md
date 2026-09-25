@@ -79,61 +79,6 @@ Django Backend ---> LLM API ---> AI-generated learning plan
 9. Schedule and Complete Session
 10. Submit Rating and Feedback
 
-┌──────────────┐
-│    Student   │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Register /   │
-│    Login     │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Create       │
-│ Profile      │
-└──────┬───────┘
-       ↓
-┌─────────────────────────┐
-│ Add Skills              │
-│ • Skills I Can Teach    │
-│ • Skills I Want to Learn│
-└───────────┬─────────────┘
-            ↓
-┌──────────────────┐
-│ Search & Filter  │
-│    Students      │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Skill Matching   │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ View Matching    │
-│    Partners      │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Send Exchange    │
-│     Request      │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Accept / Reject  │
-└───────┬────┬─────┘
-        │    │
-     Accept Reject
-        ↓    ↓
-┌──────────────┐  ┌──────────────┐
-│ Skill        │  │   Request    │
-│ Exchange     │  │   Rejected   │
-└──────┬───────┘  └──────────────┘
-       ↓
-┌──────────────────┐
-│ Rating &         │
-│ Feedback         │
-└──────────────────┘
-
 ## 6. Technology Stack
 | Layer | Technology |
 |---|---|
