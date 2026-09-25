@@ -1,4 +1,4 @@
-<img width="871" height="471" alt="image" src="https://github.com/user-attachments/assets/2fee837c-f49c-45d0-8512-950cb248c7b9" /># SkillSync AI — Student Skill Exchange Platform
+# SkillSync AI — Student Skill Exchange Platform
 
 ** Learn what you want. Teach what you know. Connect with the right people.**
 
