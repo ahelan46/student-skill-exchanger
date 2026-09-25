@@ -1,4 +1,4 @@
-# SkillSync AI — Student Skill Exchange Platform
+<img width="871" height="471" alt="image" src="https://github.com/user-attachments/assets/2fee837c-f49c-45d0-8512-950cb248c7b9" /># SkillSync AI — Student Skill Exchange Platform
 
 ** Learn what you want. Teach what you know. Connect with the right people.**
 
@@ -78,6 +78,8 @@ Django Backend ---> LLM API ---> AI-generated learning plan
 8. Receiver Accepts or Rejects
 9. Schedule and Complete Session
 10. Submit Rating and Feedback
+
+<img width="871" height="471" alt="image" src="https://github.com/user-attachments/assets/48bd240d-6da8-4a39-93ef-461d87ff6a70" />
 
 ## 6. Technology Stack
 | Layer | Technology |
