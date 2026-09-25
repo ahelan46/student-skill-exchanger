@@ -1,4 +1,4 @@
-# SkillSync AI — Student Skill Exchange Platform
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/b97a32cc-c5f0-42e3-b020-139a60ecd16a" /># SkillSync AI — Student Skill Exchange Platform
 
 ** Learn what you want. Teach what you know. Connect with the right people.**
 
@@ -78,6 +78,68 @@ Django Backend ---> LLM API ---> AI-generated learning plan
 8. Receiver Accepts or Rejects
 9. Schedule and Complete Session
 10. Submit Rating and Feedback
+
+┌──────────────┐
+│   Student    │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ Register /   │
+│    Login     │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│    Create    │
+│   Profile    │
+└──────┬───────┘
+       │
+       ▼
+┌─────────────────────────┐
+│ Add Skills              │
+│ • Skills I Can Teach    │
+│ • Skills I Want to Learn│
+└───────────┬─────────────┘
+            │
+            ▼
+┌──────────────────┐
+│ Search & Filter  │
+│     Students     │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│  Skill Matching  │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│  View Matching   │
+│     Partners     │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│  Send Exchange   │
+│     Request      │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│ Accept / Reject  ├──────────────► Request Rejected
+└───────┬──────────┘
+        │
+        ▼
+┌──────────────────┐
+│  Skill Exchange  │
+└────────┬─────────┘
+         │
+         ▼
+┌──────────────────┐
+│     Rating &     │
+│     Feedback     │
+└──────────────────┘
 
 ## 6. Technology Stack
 | Layer | Technology |
