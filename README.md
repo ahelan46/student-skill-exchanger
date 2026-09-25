@@ -1,8 +1,6 @@
 # SkillSync AI — Student Skill Exchange Platform
 
-**Tagline:** Learn what you want. Teach what you know. Connect with the right people.
-
-![System Architecture](./architecture.png)
+** Learn what you want. Teach what you know. Connect with the right people.**
 
 ## 1. Project Overview
 SkillSync AI is a web platform that helps students exchange knowledge and skills with one another. Students create profiles listing the skills they can teach and the skills they want to learn. The platform recommends suitable partners using reciprocal skill matching and supports the exchange process through requests, learning sessions, and feedback.
@@ -42,10 +40,8 @@ Recommendations can consider reciprocal skill compatibility, proficiency level, 
 - AI-generated shared learning plans with topics and practice tasks.
 - Campus skill-network visualization showing student connections and completed exchanges.
 
-*Enhancement features are planned according to available development time and may be simplified for the prototype.*
-
 ## 5. System Architecture
-```text
+
                  STUDENT
                     |
                     v
@@ -69,7 +65,7 @@ Recommendations can consider reciprocal skill compatibility, proficiency level, 
 
 Optional:
 Django Backend ---> LLM API ---> AI-generated learning plan
-```
+
 
 ### Application Flow
 1. Register / Sign In
@@ -82,6 +78,61 @@ Django Backend ---> LLM API ---> AI-generated learning plan
 8. Receiver Accepts or Rejects
 9. Schedule and Complete Session
 10. Submit Rating and Feedback
+
+┌──────────────┐
+│    Student   │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│ Register /   │
+│    Login     │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│ Create       │
+│ Profile      │
+└──────┬───────┘
+       ↓
+┌─────────────────────────┐
+│ Add Skills              │
+│ • Skills I Can Teach    │
+│ • Skills I Want to Learn│
+└───────────┬─────────────┘
+            ↓
+┌──────────────────┐
+│ Search & Filter  │
+│    Students      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Skill Matching   │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ View Matching    │
+│    Partners      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Send Exchange    │
+│     Request      │
+└────────┬─────────┘
+         ↓
+┌──────────────────┐
+│ Accept / Reject  │
+└───────┬────┬─────┘
+        │    │
+     Accept Reject
+        ↓    ↓
+┌──────────────┐  ┌──────────────┐
+│ Skill        │  │   Request    │
+│ Exchange     │  │   Rejected   │
+└──────┬───────┘  └──────────────┘
+       ↓
+┌──────────────────┐
+│ Rating &         │
+│ Feedback         │
+└──────────────────┘
 
 ## 6. Technology Stack
 | Layer | Technology |
@@ -107,7 +158,7 @@ Django Backend ---> LLM API ---> AI-generated learning plan
 | Feedback | Reviewer, reviewee, rating, and comments |
 
 ## 8. Repository Structure
-```
+
 skillsync-ai/
 ├── backend/
 │   ├── manage.py
@@ -128,74 +179,25 @@ skillsync-ai/
 │   └── architecture.md
 ├── .gitignore
 └── README.md
-```
-*The structure is a proposed starting point and can be adjusted to match the implementation.*
 
-## 9. Team Details
-*Update the placeholders before submitting the project.*
-
-| S. No. | Team Member Name | College Name | Role |
-|---|---|---|---|
-| 1 | [Team Member 1] | [College Name] | [Role] |
-| 2 | [Team Member 2] | [College Name] | [Role] |
-| 3 | [Team Member 3] | [College Name] | [Role] |
-| 4 | [Team Member 4] | [College Name] | [Role] |
-
-## 10. Setup Instructions
-These are initial setup instructions. Add environment-specific details and deployment URLs once the application is configured.
-
-### Backend
-```bash
-cd backend
-python -m venv venv
-```
-Activate the virtual environment:
-- Windows: `venv\Scripts\activate`
-- macOS/Linux: `source venv/bin/activate`
-
-Install dependencies after creating `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
-Configure database and secret values in a local `.env` file. *Do not commit credentials or API keys.*
-
-Run migrations and start the development server:
-```bash
-python manage.py migrate
-python manage.py runserver
-```
-
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Configure the frontend API base URL to point to the Django backend.
-
-## 11. GitHub Collaboration
-1. Create a new GitHub repository for SkillSync AI.
-2. Add team members as repository collaborators.
-3. Assign each member a module or task.
-4. Use branches and pull requests to integrate work.
-5. Keep `.env`, credentials, virtual environments, and dependency folders out of version control.
-
-## 12. Project Status
-**Status:** Prototype under development.
-
-**Planned implementation priorities:**
-- Student profiles and skill management.
-- Reciprocal partner matching with explanations.
-- Exchange request and acceptance workflow.
-- Session scheduling and feedback.
-- Optional learning-plan generation and campus network visualization.
-
-## 13. Future Enhancements
+## 9. Future Enhancements
 - Verified student accounts using college email.
 - Improved matching based on learning goals and session history.
 - Calendar integration and reminders.
 - Moderation and reporting tools.
 - Analytics on skill demand and peer-learning activity across departments.
 
----
-*Note: Replace all team placeholders, confirm the final hosting provider, and update the setup commands and project status to reflect the actual implementation before submission.*
+👥 Team Details
+
+Team Name: NULL THEORY
+
+Team Members:
+1) AHELAN V
+2) AKSHITHA BN
+3) HARINI S
+
+College Name: DR.N.G.P.INSTITUTE OF TECHNOLOGY
+
+Problem Statement: WEB-04 – Student Skill Exchange Platform
+
+Domain: Website Development
